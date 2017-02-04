@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --blue:#00FFFF;
+  --pink:#FF00FF;
+}
+.container {
+  height: 97.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; // je suis une fougère
+}
+.contain {
+  height: 91vh;
+  width: 96%;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+.name {
+  position: absolute;
+  margin-top: -0.7%;
+  margin-left: 12vh;
+  font-size: 0.8em;
+  font-family: 'Roboto', sans-serif;
+  background-color: white;
+  padding: 0px 2vh;
+}
+.social {
+  position: absolute;
+  margin-left: -3.7%;
+  margin-top: 63vh;
+  font-size: 0.8em;
+  list-style: none;
+  background-color: white;
+  white-space: pre-line;
+  font-family: 'Roboto', sans-serif;
+}
+.soc {
+  text-decoration: none;
+}
+.soc:hover {
+  color: red;
+}
+#coordinate {
+  position: absolute;
+  margin-left: 77%;
+  margin-top: 89.8vh;
+  font-size: 0.8em;
+  background-color: white;
+  padding:0px 2vh;
+}
+.about {
+  position: absolute;
+  margin-left: 87%;
+  background-color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
+  color: white;
+  padding: 2px 2vh;
+}
+.about:hover {
+color: black;
+}
+.pFolder {
+  position: absolute;
+  margin-left: 15%;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 7vh;
+  padding-right: 18vh;
+  font-size: 2.5em;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  z-index: 2;
+}
+span {
+  font-size: 0.4em;
+}
+.p1 {
+  list-style: none;
+}
+
+/* Section 0
+* --------------------------------------- */
+#section0{
+  background-image: url(./img/ToDoGify6.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#section0 h1{
+  color: #444;
+}
+#section0 p{
+  color: #333;
+  opacity: 0.4;
+}
+/* Section 1
+* --------------------------------------- */
+#section1{
+  background-image: url(./img/JamGify6.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+#section1 h1{
+  color: #fff;
+}
+#section1 p{
+  opacity: 0.8;
+}
+/* Section 2
+* --------------------------------------- */
+#section2{
+  background-image: url(./img/GokuGify6.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;}
+#section2 h1{
+  color: #F2F2F2;
+}
+#section2 p{
+  opacity: 0.6;
+}
+/* Section 3
+* --------------------------------------- */
+#section3{
+  background-image: url(./img/DribbbleGify6.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;}
+}
+#section3 h1{
+  color: #F2F2F2;
+}
+#section3 p{
+  opacity: 0.6;
+}
+/* Section 4
+* --------------------------------------- */
+#section4{
+  background-image: url(./img/ClockGify6.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;}
+}
+#section4 h1{
+  color: #F2F2F2;
+}
+#section4 p{
+  opacity: 0.6;
+}
+
+.centerProj {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-left: 20%;
+}
+.containPage {
+  display: flex;
+  justify-content: center;
+  height: 52.1vh;
+  width: 83%;
+  overflow: hidden;
+  z-index: 1;
+}
+#fullpage {
+  height:52.1vh;
+  width:83%;
+}
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+    height:53vh;
+}
+
+.link {
+  height: 100vh;
+  width: 100%;
+}
+.tech {
+  font-size: 0.7em;
+  text-align: right;
+  padding-right: 15%;
+  margin-top: 0;
+  overflow: visible;
+}
+
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+            /*PRELOADER*/
+/*///////////////////////////////////*/
+/*///////////////////////////////////*/
+
+/*body {
+  background-image: url('Whiteflower.jpeg');
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}*/

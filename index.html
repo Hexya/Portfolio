@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css" media="screen" title="no title">
+  <title>Portfolio Loic Belaïd-Remesal</title>
+
+  <script type="text/javascript" src="flower.js"></script>
+  <script type="text/javascript">
+      window.onload = function(){
+          snow.init(25); // 10 flocons seront donc affichés
+  	};
+  </script>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body onmousemove="positionSouris(event);">
+
+  <div class="container">
+    <div class="contain">
+
+      <p class="name">Loïc Belaïd-Remesal</p>
+      <ul class="social">
+        <li><a class ="soc" href="https://www.linkedin.com/in/lo%C3%AFc-bela%C3%AFd-remesal-22418912a?trk=hp-identity-name">Ln</a></li>
+        <li><a class ="soc" href="https://twitter.com/Hexya_Asahi">Tw</a></li>
+        <li><a class ="soc" href="https://github.com/Hexya">Gh</a></li>
+      </ul>
+      <div id="coordinate"></div>
+      <p class="about">About me</p>
+
+      <div class="pFolder">
+        <ul class="projects">
+          <li class="p1"><span>latest</span> Projects</li>
+        </ul>
+      </div>
+
+      <div class="centerProj">
+            <div class="containPage">
+              <div id="fullpage">
+                <div class="section " id="section0">
+                  <a style="display:block" href="https://hexya.github.io/ToDoList/">
+                    <div class="link">
+                    </div>
+                  </a>
+                </div>
+                <div class="section" id="section1">
+                  <a style="display:block" href="http://speedhunters.com">
+                    <div class="link">
+                    </div>
+                  </a>
+                </div>
+                <div class="section" id="section2">
+                  <a style="display:block" href="https://hexya.github.io/JapaneseGlitch/">
+                    <div class="link">
+                    </div>
+                  </a>
+                </div>
+                <div class="section" id="section3">
+                  <a style="display:block" href="https://github.com/Hexya/Dribbble-React">
+                    <div class="link">
+                    </div>
+                  </a>
+                </div>
+                <div class="section" id="section4">
+                  <a style="display:block" href="https://hexya.github.io/Clock-Js-Css/">
+                    <div class="link">
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="tech">#HTML #CSS #JS</p>
+
+
+    </div>
+  </div>
+
+<script type="text/javascript" src="index.js"></script>
+<script type="text/javascript" src="javascript.fullPage.js"></script>
+<script type="text/javascript">
+fullpage.initialize('#fullpage', {
+  anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+  menu: '#menu',
+  css3:true
+});
+</script>
+
+</body>
+</html>
