@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="main.css" media="screen" title="no title">
-  <title>Portfolio Loic Belaïd-Remesal</title>
-
-  <script type="text/javascript" src="flower.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/revealer.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Loïc Belaïd-Remesal Portfolio</title>
+  <script>document.documentElement.className = 'js';</script>
+  <script type="text/javascript" src="js/flower.js"></script>
   <script type="text/javascript">
       window.onload = function(){
-          snow.init(25); // 10 flocons seront donc affichés
+          snow.init(25); // 25 flocons seront donc affichés
   	};
   </script>
 
@@ -21,12 +25,46 @@
 
       <p class="name">Loïc Belaïd-Remesal</p>
       <ul class="social">
-        <li><a class ="soc" href="https://www.linkedin.com/in/lo%C3%AFc-bela%C3%AFd-remesal-22418912a?trk=hp-identity-name">Ln</a></li>
-        <li><a class ="soc" href="https://twitter.com/Hexya_Asahi">Tw</a></li>
-        <li><a class ="soc" href="https://github.com/Hexya">Gh</a></li>
+        <li><a href="https://www.linkedin.com/in/lo%C3%AFc-bela%C3%AFd-remesal-22418912a?trk=hp-identity-name"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/Hexya_Asahi"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/Hexya"><i class="fa fa-github" aria-hidden="true"></i></a></li>
       </ul>
       <div id="coordinate"></div>
       <p class="about">About me</p>
+
+      <!-- //////////////// Menu //////////////// -->
+            <svg class="hidden">
+        			<symbol id="icon-menu" viewBox="0 0 17.6 9.9">
+        				<title>menu</title>
+        				<path d="M17.6,1H0V0h17.6V1z M17.6,4.3h-12v1h12V4.3z M17.6,8.9h-6.9v1h6.9V8.9z"/>
+        			</symbol>
+        			<symbol id="icon-cross" viewBox="0 0 10.2 10.2">
+        				<title>cross</title>
+        				<path d="M5.8,5.1l4.4,4.4l-0.7,0.7L5.1,5.8l-4.4,4.4L0,9.5l4.4-4.4L0,0.7L0.7,0l4.4,4.4L9.5,0l0.7,0.7L5.8,5.1z"/>
+        			</symbol>
+        		</svg>
+
+        		<main>
+        			<header class="codrops-header">
+        				<button class="btn btn--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+        			</header>
+
+        			<nav class="menu">
+        				<button class="btn btn--close"><svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg></button>
+
+        				<ul class="menu__inner">
+                  <div class="containMenu">
+        					<li class="menu__item"><a>Loïc Belaïd-Remesal</a></li>
+        					<li class="menu__item"><a>24ans</a></li>
+        					<li class="menu__item"><a>Web developpeur</a></li>
+        					<li class="menu__item"><a></a></li>
+                </div>
+        				</ul>
+        			</nav>
+
+        		</main>
+      <!-- //////////////// End menu //////////////// -->
+      <p class="scrll">← scroll →</p>
 
       <div class="pFolder">
         <ul class="projects">
@@ -77,13 +115,53 @@
   </div>
 
 <script type="text/javascript" src="index.js"></script>
-<script type="text/javascript" src="javascript.fullPage.js"></script>
+<!-- //////////////// Scroll page //////////////// -->
+<script type="text/javascript" src="js/javascript.fullPage.js"></script>
 <script type="text/javascript">
 fullpage.initialize('#fullpage', {
   anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
   menu: '#menu',
   css3:true
 });
+</script>
+<!-- //////////////// Menu //////////////// -->
+<script src="js/anime.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+(function() {
+  var navEl = document.querySelector('nav.menu'),
+    revealer = new RevealFx(navEl),
+    closeCtrl = navEl.querySelector('.btn--close');
+
+  document.querySelector('.btn--menu').addEventListener('click', function() {
+    revealer.reveal({
+      bgcolor: 'rgb(230,230,230)',
+      duration: 400,
+      easing: 'easeInOutCubic',
+      onCover: function(contentEl, revealerEl) {
+        navEl.classList.add('menu--open');
+        contentEl.style.opacity = 1;
+      },
+      onComplete: function() {
+        closeCtrl.addEventListener('click', closeMenu);
+      }
+    });
+  });
+
+  function closeMenu() {
+    closeCtrl.removeEventListener('click', closeMenu);
+    navEl.classList.remove('menu--open');
+    revealer.reveal({
+      bgcolor: 'rgb(230,230,230)',
+      duration: 400,
+      easing: 'easeInOutCubic',
+      onCover: function(contentEl, revealerEl) {
+        navEl.classList.remove('menu--open');
+        contentEl.style.opacity = 0;
+      }
+    });
+  }
+})();
 </script>
 
 </body>
