@@ -207,6 +207,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	font-family: 'Kayak', sans-serif;
 }
 
 .menu__item {
@@ -218,12 +219,17 @@ main {
 	transition: transform 0s 0.4s;
 	opacity: 0;
 }
+.js .menu__item2 {
+	transform: translate3d(33em,0,0);
+	transition: transform 0s 0.4s;
+	opacity: 0;
+}
 
 .btn--close {
 	opacity: 0;
 }
 
-.menu--open .menu__item,
+.menu--open .menu__item,.menu--open .menu__item2,
 .menu--open .btn--close {
 	opacity: 1;
 	transform: translate3d(0,0,0);
@@ -232,14 +238,48 @@ main {
 
 .menu--open .menu__item:nth-child(1) {
 	transition-delay: 0.135s;
+	padding-top: 7%;
 }
-.menu--open .menu__item:nth-child(2) {
-	transition-delay: 1.165s;
+.menu--open .menu__item2:nth-child(2) {
+	transition-delay: 0.665s;
+	padding-top: 1%;
 }
 .menu--open .menu__item:nth-child(3) {
-	transition-delay: 2.195s;
+	transition-delay: 1.195s;
+	padding-top: 1%;
 }
-.menu--open .menu__item:nth-child(4) {
-	transition-delay: 3.225s;
-
+.menu--open .menu__item2:nth-child(4){
+	transition-delay: 2.225s;
+	padding-top: 3%;
+}
+.menu--open .menu__item2:nth-child(5){
+	transition-delay: 2.225s;
+}
+.menu--open .menu__item:nth-child(6), .menu--open .menu__item:nth-child(7) {
+	transition-delay: 2.225s;
+}
+.menu--open .menu__item2:nth-child(8) {
+	transition-delay: 3.425s;
+	padding-top: 8%;
+}
+.menu--open .menu__item:nth-child(9) {
+	transition-delay: 4.025s;
+	padding-top: 1%;
+}
+.logDesc{
+	color: red;
+}
+.menuDesc {
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+.menuDesc1 {
+	color: white;
+	background-color: red;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 1.5em;
+}
+.menuDesc2 {
+	font-size: 1.2em;
 }
