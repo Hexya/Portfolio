@@ -13,7 +13,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center; // je suis une fougère
+  align-items: center;
 }
 .contain {
   height: 91vh;
@@ -33,7 +33,7 @@
 }
 .social {
   position: absolute;
-  margin-left: -3.7%;
+  margin-left: -6.4vh; /*3.7%*/
   margin-top: 63vh;
   font-size: 0.8em;
   list-style: none;
@@ -200,7 +200,7 @@ span {
   position: absolute;
   font-family: 'Kayak', sans-serif;
   font-size: 0.8em;
-  margin-left: 82.5%;
+  right: 11%;
   margin-top: 40vh;
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Safari */

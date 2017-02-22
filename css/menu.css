@@ -151,16 +151,16 @@ main {
 
 .btn--menu {
 	position: absolute;
-	top: 3vw;
-	right: 3vw;
+	top: 30%;
+	right: 35%;
 	color: #939391;
 	pointer-events: visible;
 }
 
 .btn--close {
 	position: absolute;
-	top: 3vw;
-	right: 3vw;
+	top: 6%;
+	right: 3.5%;
 	font-size: 0.75em;
 	z-index: 100;
 }
@@ -194,11 +194,12 @@ main {
 	margin: 0;
 	background: white;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .containMenu {
 	position: absolute;
-	margin-top: -16vh;
-	margin-left: -2%;
   height: 91vh;
   width: 96%;
   border-style: solid;
