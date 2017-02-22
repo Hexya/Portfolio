@@ -206,3 +206,56 @@ span {
   -webkit-transform: rotate(90deg); /* Safari */
   transform: rotate(90deg);
 }
+.scrll2 {
+  visibility: hidden;
+}
+
+
+@media screen and (max-width: 640px) {
+
+.centerProj {
+  margin-top: 35vh;
+  margin-left: 0%;
+  transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+}
+.containPage {
+  height: 92.1vh;
+  width: 97%;
+}
+#fullpage {
+  height:92.1vh;
+  width:97%;
+}
+.fp-section {
+    height:93vh;
+}
+.scrll {
+visibility: hidden;
+}
+.scrll2 {
+  visibility: visible;
+  position: absolute;
+  font-family: 'Kayak', sans-serif;
+  font-size: 0.8em;
+  right: 64%;
+  margin-top: 28vh;
+  -ms-transform: rotate(0deg); /* IE 9 */
+  -webkit-transform: rotate(0deg); /* Safari */
+  transform: rotate(0deg);
+}
+.about {
+  margin-left: 77%;
+}
+.pFolder {
+  margin-left: 8%;
+  margin-top: 20%;
+  font-size: 2em;
+  transition:all .3s linear;
+    -o-transition:all .3s linear;
+    -moz-transition:all .3s linear;
+    -webkit-transition:all .3s linear;
+}
+}

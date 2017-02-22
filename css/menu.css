@@ -216,13 +216,13 @@ main {
 }
 
 .js .menu__item {
-	transform: translate3d(-33em,0,0);
-	transition: transform 0s 0.4s;
+	transform: translate3d(0,8em,0);
+	transition: transform 0s 0s;
 	opacity: 0;
 }
 .js .menu__item2 {
-	transform: translate3d(33em,0,0);
-	transition: transform 0s 0.4s;
+	transform: translate3d(0,8em,0);
+	transition: transform 0s 0s;
 	opacity: 0;
 }
 
@@ -234,7 +234,7 @@ main {
 .menu--open .btn--close {
 	opacity: 1;
 	transform: translate3d(0,0,0);
-	transition: opacity 1.4s 0.135s, transform 1.4s 0.135s cubic-bezier(0.645, 0.045, 0.355, 1);
+	transition: opacity 0.5s 0.135s, transform 0.5s 0.135s ease-out;
 }
 
 .menu--open .menu__item:nth-child(1) {
@@ -242,29 +242,29 @@ main {
 	padding-top: 7%;
 }
 .menu--open .menu__item2:nth-child(2) {
-	transition-delay: 0.665s;
+	transition-delay: 0.265s;
 	padding-top: 1%;
 }
 .menu--open .menu__item:nth-child(3) {
-	transition-delay: 1.195s;
+	transition-delay: 0.395s;
 	padding-top: 1%;
 }
 .menu--open .menu__item2:nth-child(4){
-	transition-delay: 2.225s;
+	transition-delay: 0.425s;
 	padding-top: 3%;
 }
 .menu--open .menu__item2:nth-child(5){
-	transition-delay: 2.225s;
+	transition-delay: 0.425s;
 }
 .menu--open .menu__item:nth-child(6), .menu--open .menu__item:nth-child(7) {
-	transition-delay: 2.225s;
+	transition-delay: 0.425s;
 }
 .menu--open .menu__item2:nth-child(8) {
-	transition-delay: 3.425s;
+	transition-delay: 0.525s;
 	padding-top: 8%;
 }
 .menu--open .menu__item:nth-child(9) {
-	transition-delay: 4.025s;
+	transition-delay: 0.625s;
 	padding-top: 1%;
 }
 .logDesc{
@@ -283,4 +283,11 @@ main {
 }
 .menuDesc2 {
 	font-size: 1.2em;
+}
+@media screen and (max-width: 640px) {
+	.btn--menu {
+		position: absolute;
+		top: 60%;
+		right: 65%;
+	}
 }
