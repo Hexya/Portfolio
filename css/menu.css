@@ -241,7 +241,7 @@ main {
 	transition-delay: 0.135s;
 	padding-top: 7%;
 }
-.menu--open .menu__item2:nth-child(2) {
+.menu--open .menu__item:nth-child(2) {
 	transition-delay: 0.265s;
 	padding-top: 1%;
 }
@@ -249,17 +249,17 @@ main {
 	transition-delay: 0.395s;
 	padding-top: 1%;
 }
-.menu--open .menu__item2:nth-child(4){
+.menu--open .menu__item:nth-child(4){
 	transition-delay: 0.425s;
 	padding-top: 3%;
 }
-.menu--open .menu__item2:nth-child(5){
+.menu--open .menu__item:nth-child(5){
 	transition-delay: 0.425s;
 }
 .menu--open .menu__item:nth-child(6), .menu--open .menu__item:nth-child(7) {
 	transition-delay: 0.425s;
 }
-.menu--open .menu__item2:nth-child(8) {
+.menu--open .menu__item:nth-child(8) {
 	transition-delay: 0.525s;
 	padding-top: 8%;
 }
@@ -292,5 +292,10 @@ main {
 	}
 	.menu--open .menu__item:nth-child(1) {
 		padding-top: 25%;
+	}
+}
+@media handheld {
+	.menu__item {
+		font-size: 2em;
 	}
 }
