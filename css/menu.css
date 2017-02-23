@@ -294,8 +294,3 @@ main {
 		padding-top: 25%;
 	}
 }
-@media handheld and (orientation:portrait) {
-	.menu__item {
-		font-size: 2.5em;
-	}
-}
