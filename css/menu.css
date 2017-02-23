@@ -284,7 +284,7 @@ main {
 .menuDesc2 {
 	font-size: 1.2em;
 }
-@media screen and (max-width: 640px) {
+@media screen and (orientation:portrait), (max-width: 640px) {
 	.btn--menu {
 		position: absolute;
 		top: 60%;
