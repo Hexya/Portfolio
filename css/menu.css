@@ -290,4 +290,7 @@ main {
 		top: 60%;
 		right: 65%;
 	}
+	.menu--open .menu__item:nth-child(1) {
+		padding-top: 25%;
+	}
 }
