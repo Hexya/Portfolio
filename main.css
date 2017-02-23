@@ -210,8 +210,7 @@ span {
   visibility: hidden;
 }
 
-
-@media screen and (max-width: 640px) {
+@media screen and (orientation:portrait), (max-width: 640px){
 
 .centerProj {
   margin-top: 35vh;
